@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
+   <!--What it does: This line tells the web browser what kind of content it will be displaying and how the text is encoded.
+Simpler terms: It’s like telling the browser, "Hey, the page is in HTML, and all the letters, numbers, and symbols are written in a language called UTF-8." This makes sure all characters (like letters or special symbols) show up correctly.-->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   <!--What it does: This tells the browser to use the latest and best version of Internet Explorer to view the page.
+Simpler terms: Imagine you're telling Internet Explorer, "Please use your best and most up-to-date settings to show this page."-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <!--What it does: This controls how the page looks on different devices, like phones or computers.
+Simpler terms: It’s like saying, "Make sure the page fits the width of the device's screen, start with the normal zoom level, and let people zoom in and out if they want."-->
    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+<!--What it does: This prevents the browser from automatically turning things like phone numbers, dates, addresses, emails, and URLs into clickable links.
+Simpler terms: You’re telling the browser, "Don’t automatically make phone numbers or other things clickable."-->
    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+
+   <!--What it does: This stops Apple devices from changing the format of an email when it’s opened.
+Simpler terms: It’s like telling Apple devices, "Don’t mess with how this email looks when someone opens it."-->
    <meta name="x-apple-disable-message-reformatting">
+
+   <!--What it does: This tells the browser that the website can be displayed in both light and dark modes.
+Simpler terms: You’re saying, "This page can look good whether your screen is in light mode or dark mode."-->
    <meta name="color-scheme" content="light dark">
+
+   <!--What it does: This reinforces that the page supports both light and dark color schemes.
+Simpler terms: It’s like double-checking, "Yes, this page works with both light and dark modes."-->
    <meta name="supported-color-schemes" content="light dark">
+
+
 	<title>Real World Test Project - Kasha Decor</title>
-   <!-- ADD NECESSARY LINKS TO GOOGLE FONTS HERE -->
+    <!-- ADD NECESSARY LINKS TO GOOGLE FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+
+
+   <!--Line-by-Line Explanation:
+
+    [if mso]>
+        What it does: This line is like a secret message that only Microsoft Outlook will read. "mso" stands for "Microsoft Office."
+        Simpler terms: It’s like saying, "Hey, Outlook! Pay attention to what’s inside these special brackets."
+
+    <noscript>
+        What it does: This is telling the browser or email reader that if it can't run certain types of code (JavaScript), then it should use what’s inside this tag instead.
+        Simpler terms: It’s like saying, "If you can't do something fancy, just follow these basic instructions."
+
+    <xml>
+        What it does: This starts a block of code written in a special language called XML, which is often used to give detailed instructions.
+        Simpler terms: It’s like opening a specific instruction manual that Outlook can read.
+
+    <o:OfficeDocumentSettings>
+        What it does: This is where the instructions for Outlook begin. It's like opening a special section of the manual.
+        Simpler terms: It’s like saying, "Let’s set up some special rules for Outlook."
+
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+        What it does: This line tells Outlook to display things at a certain level of detail, specifically 96 pixels per inch (which is a standard measurement for how sharp or clear an image appears).
+        Simpler terms: It’s like saying, "Outlook, make sure everything looks clear and sharp, using this specific setting."
+
+    </o:OfficeDocumentSettings>
+        What it does: This closes the special settings for Outlook.
+        Simpler terms: It’s like saying, "That’s all the special rules we need for Outlook."
+
+    </xml>
+        What it does: This closes the XML block, ending the special instructions.
+        Simpler terms: It’s like closing the instruction manual.
+
+    </noscript>
+        What it does: This ends the fallback instructions in case the email reader can’t run scripts.
+        Simpler terms: It’s like saying, "That’s it for the backup plan."
+
+    [endif]
+    What it does: This ends the special message just for Outlook.
+    Simpler terms: It’s like saying, "Okay, Outlook, you can stop paying attention now."-->
+
 
    <!--[if mso]>
       <noscript>
@@ -20,6 +86,8 @@
          </xml>
       </noscript>
    <![endif]-->
+
+
    <style type="text/css">
       table {
 			border-spacing: 0;
@@ -142,6 +210,37 @@
 
 <!-- ADD YOUR SECTION COMMENTS HERE (I.E "START FIRST TWO COLUMN SECTION")
    REMOVE THE COMMENTS BEFORE USING A TEMPLATE IN EMAIL. -->
+
+   <!-- START HEADER/LOGO -->
+    <!--Explainer: This code is like a set of instructions telling a website how to display a picture that you can click on. Here's a simpler explanation:
+
+    <tr> and <td>:
+        Think of <tr> as a row in a table, and <td> as a box inside that row. This box doesn't have any extra space inside it (padding:0;).
+
+    Nested <table>:
+        Inside that box, there's another table that takes up the entire width of the space (width="100%"). This table is used just to help with the layout (that's what role="presentation" means), and there's no space between the boxes in this table (border-spacing:0;).
+
+    More <tr> and <td>:
+        Inside the second table, there's another row and box. This box also has no extra space inside (padding: 0;), and it makes sure everything inside it is tightly packed together (line-height: 0px;).
+
+    Clickable Link (<a>):
+        Inside the last box, there's a link (<a>). When you click this link, it takes you to another website (href="https://example.com/1"). This link opens in a new tab in your browser (target="_blank").
+
+    Image (<img>):
+        Inside the link, there's an image. This is what you see and click on. The image comes from a specific website (src="https://mcusercontent.com/474f5b70c3b324277323d4c42/images/ce6afb83-a2bc-668d-ff82-fe06e24edf6c.jpg").
+        If the image doesn't load, the text "Kasha Decor" will show instead (alt="Kasha Decor").
+        When you hover your mouse over the image, "Kasha Decor" will pop up as a title (title="Kasha Decor").
+        The image is set to be 600 pixels wide, but it will stretch to fill the entire width of the box it’s in (style="border: 0; width: 100%;"), and there won't be any border around it.
+
+In Short:
+
+This code creates a row in a table that holds a clickable image. When you click the image, it takes you to a different website. The image will fill the width of the space it’s in, with no borders or extra space around it.-->
+
+
+
+
+
+   <!-- END HEADER/LOGO -->
 
 
          </table>
