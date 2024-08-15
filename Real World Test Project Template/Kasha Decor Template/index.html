@@ -150,6 +150,54 @@ Simpler terms: It’s like double-checking, "Yes, this page works with both ligh
 
       }
 
+
+/*Line-by-Line Explanation:
+
+    :root {
+        What it does: This is the very top level of your website's style. It sets the base rules for everything else.
+        Simpler terms: It’s like saying, "Here are the main rules that everything else will follow."
+
+    color-scheme: light dark;
+        What it does: This tells the website or email that it should be ready to work in both light mode (light background, dark text) and dark mode (dark background, light text).
+        Simpler terms: It’s like saying, "I can look good in both light and dark settings!"
+
+    supported-color-schemes: light dark;
+        What it does: This tells the website that it officially supports both light and dark color schemes.
+        Simpler terms: It’s like saying, "I’m ready to switch between light and dark modes if needed."
+
+    @media (prefers-color-scheme: dark) {
+        What it does: This starts a block of code that will only run if the user prefers dark mode.
+        Simpler terms: It’s like saying, "If someone likes dark mode, do this stuff."
+
+    body, table, .darkmode-bg {
+        What it does: These are the parts of the website or email (like the main body, tables, and anything with a specific class called darkmode-bg) that will get a different style in dark mode.
+        Simpler terms: It’s like saying, "Let’s change the background and text for these parts in dark mode."
+
+    background: #2d2d2d !important;
+        What it does: This changes the background color to a very dark gray (#2d2d2d) in dark mode.
+        Simpler terms: It’s like saying, "Make the background super dark."
+
+    color: #ffffff !important;
+        What it does: This changes the text color to white (#ffffff) in dark mode.
+        Simpler terms: It’s like saying, "Make the text white so it stands out on the dark background."
+
+    [data-ogsc] body, table, .darkmode-bg {
+        What it does: This line is similar to the one before but is more specific. It’s making sure that in dark mode, elements tagged with [data-ogsc] also follow these color rules.
+        Simpler terms: It’s like saying, "If there’s a special tag, make sure it follows the same dark mode rules."
+
+    .darkmode-transparent {
+        What it does: This applies to elements that are meant to be transparent (see-through) in dark mode.
+        Simpler terms: It’s like saying, "Keep certain things see-through even in dark mode."
+
+    background-color: transparent !important;
+        What it does: This makes the background color of certain elements fully transparent in dark mode.
+        Simpler terms: It’s like saying, "Make the background invisible."
+
+    [data-ogsc] .darkmode-transparent {
+        What it does: Again, this is making sure that any specially tagged elements that should be transparent in dark mode stay that way.
+        Simpler terms: It’s like saying, "Even special tagged elements should stay see-through."
+"*/
+
       :root {
          color-scheme: light dark;
          supported-color-schemes: light dark;
